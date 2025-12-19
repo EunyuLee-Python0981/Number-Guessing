@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>숫자 맞추기 게임</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<div id="mode-screen" class="card">
+<h1>난이도 선택</h1>
+<button onclick="startGame(100)">쉬움 (1~100)</button>
+<button onclick="startGame(500)">보통 (1~500)</button>
+<button onclick="startGame(1000)">어려움 (1~1000)</button>
+<button onclick="startGame(10000)">전문가 (1~10000)</button>
+</div>
+
+
+<div id="game-screen" class="card hidden">
+<h1>숫자 맞추기</h1>
+<p id="hint">숫자를 입력하세요</p>
+<input type="number" id="guessInput" />
+<button id="guessBtn">확인</button>
+<p id="tries">시도 횟수: 0</p>
+<button class="reset" onclick="location.reload()">다시하기</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
